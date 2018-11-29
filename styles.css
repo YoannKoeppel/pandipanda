@@ -27,7 +27,7 @@ TITLE
 WRAPPER
 ******/
 
-#wrapper, #interractions {
+#wrapper, #characteristics {
     display: flex;
     justify-content:space-evenly;
 }
@@ -62,7 +62,7 @@ SECTION COMPUTED
 }
 
 
-#stats {
+#actions {
     display: flex;
     justify-content: space-evenly;
 }
