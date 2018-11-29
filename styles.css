@@ -1,0 +1,151 @@
+/*******
+GENERALS
+*******/
+
+body {
+	background-color: #9FE1C8;
+	color: white;
+	font-family: 'Inconsolata', monospace;
+    margin-left: 50px;
+    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+/**** 
+TITLE
+****/
+
+#site-title {
+	font-size: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+/******
+WRAPPER
+******/
+
+#wrapper, #interractions {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+#wrapper {
+    width: 100vh;
+    flex-flow: column;
+}
+
+/***************
+SECTION COMPUTED
+***************/
+
+#panda {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+#actionsButtons1 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+
+#actionsButtons2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+
+#stats {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/***********
+SECTION FORM
+***********/
+
+
+#pandaName {
+	border: none;
+	border-bottom: 2px solid #587C6F;
+	background:none;
+}
+
+
+.button {
+    padding: 5px;
+    height: 50px;
+    
+    color: white;
+    background-color: #9FE1C8;
+    
+    border-width: 2px;
+    border-color: white;
+    border-radius: 5px;
+    border-style: solid;
+    
+    transition-duration: 0.5;
+    transition-timing-function: ease;
+    transition-property: background;
+}
+
+#startButton {
+    background-color: #587C6F;
+}
+
+/****
+MODAL
+****/
+
+#modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.7);
+    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#modalContent {
+    background-color: white;
+    color: #587C6F;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px 40px 20px 10px;
+    border-radius: 5px;
+}
+
+
+/**********
+MEDIA QUERY
+**********/
+
+@media (max-width: 768px) {
+
+    #computed {
+        flex-direction: column;
+    }
+    #grid {
+        grid-template-columns: 30% 30% 30%; 
+    }
+    #basicsInfo {
+        justify-content: space-between;
+    }
+}
