@@ -8,125 +8,42 @@ body {
 	font-family: 'Inconsolata', monospace;
 }
 
-/**** 
-TITLE
-****/
+/**************
+SECTION WRAPPER
+**************/
 
-#site-title {
-	font-size: 32px;
-    display: flex;
-    justify-content: center;
+#wrapper {
+    height: 100vh;
+    overflow: hidden;
 }
 
-/******
-WRAPPER
-******/
+/****************
+SECTION GAMECANVA
+****************/
 
-/************
-SECTION PANDA
-************/
+#gameCanva {
+    
+}
+
+    /*******************
+    SECTION GENERALINFOS
+    *******************/
+
+#generalInfos {
+    position: fixed;
+    padding: 40px;
+}
+
+    /************
+    SECTION PANDA
+    ************/
 
 #panda {
     display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-/*************
-SECTION ACTION
-*************/
-
-#actions {
-    display: flex;
-    height: 40vh;
-    justify-content: space-around;
-}
-
-#actionsButtons {
-    display: flex;
-    width: 100%;
-    flex-flow: row;
-    justify-content: space-between;
-}
-
-/***********
-SECTION FORM
-***********/
-
-
-#pandaName {
-	border: none;
-	border-bottom: 2px solid #587C6F;
-	background:none;
-}
-
-
-.button {
-    padding: 5px;
-    height: 50px;
-    
-    color: white;
-    background-color: #9FE1C8;
-    
-    border-width: 2px;
-    border-color: white;
-    border-radius: 5px;
-    border-style: solid;
-    
-    transition-duration: 0.5;
-    transition-timing-function: ease;
-    transition-property: background;
-}
-
-#startButton {
-    background-color: #587C6F;
-}
-
-/****
-MODAL
-****/
-
-#modal {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0,0,0, 0.7);
-    
-    display: flex;
-    flex-flow: column;
-    align-items: center;
     justify-content: center;
 }
 
+/**************
+SECTION ACTIONS
+**************/
 
-#modalContent {
-    background-color: white;
-    color: #587C6F;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 20px 40px 20px 10px;
-    border-radius: 5px;
-}
-
-
-/**********
-MEDIA QUERY
-**********/
-
-@media (max-width: 768px) {
-
-    #computed {
-        flex-direction: column;
-    }
-    #grid {
-        grid-template-columns: 30% 30% 30%; 
-    }
-    #basicsInfo {
-        justify-content: space-between;
-    }
-}
